@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&family=Roboto+Slab&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+.App{
+    background-color: #181818;
+    height: 100vh;
+    width: 100%;
+    padding: 1px;
+}
+
+.container{
+    height: 75vh;
+    width: 90vw;
+    position: relative;
+    left:50%;
+    transform: translate(-50%,0);
+    background-color: #EEEEEE;
+
+    img{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 200px;
+    }
+}
+
+.header{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0;
+
+    h1{
+        color: #EEEEEE;
+        font-family: 'Raleway', sans-serif;
+        font-weight: bold;
+        margin-left: 35px;
+    }
+
+    form{
+        background-color: #EEEEEE;
+        display: flex;
+        justify-content: flex-start;
+        align-content: center;
+        flex-wrap: wrap;
+        height: 100px;
+        margin: 25px auto;
+        margin-right: unset;
+        margin-left: 0;
+        padding-left: 60px;
+        width: 40%;
+        input{
+            background-color: #EEEEEE;
+            border: none;
+            border-bottom: 5px solid #CF0A0A;
+            color: #181818;
+            width: 300px;
+            height: 50px;
+            font-family: 'Raleway', sans-serif;
+            font-size: 20px;
+            font-weight: bold;
+
+            &:focus{
+                outline: none;
+            }
+        }
+
+        button{
+            width: 120px;
+            height: 50px;
+            background-color: #181818;
+            color: #EEEEEE;
+            border: 5px solid #CF0A0A;
+            font-family: 'Raleway', sans-serif;
+            font-size: 20px;
+            font-weight: bold;
+            margin-left: 50px;
+
+            &:hover{
+                color: #181818;
+                background-color: #CF0A0A;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+.card{
+    position: relative;
+    margin: 30px;
+    border: 5px #CF0A0A solid;
+    height: 60vh;
+    overflow: hidden;
+
+    &-user{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-content: center;
+        border-bottom: 5px #CF0A0A solid;
+        background-color: #CF0A0A;
+        padding: 5px;
+
+        h3{
+            display: inline-block;
+            align-self: center;
+            margin-right: auto;
+            margin-left: 10px;
+            font-family: 'Raleway', sans-serif;
+            font-weight: bold;
+            color:#EEEEEE
+        }
+
+        img{
+            width: 100px;
+            height: 100px;
+        }
+    }
+
+    &-content{
+        position: absolute;
+        left: 0;
+        right: -15px;
+        padding: 20px;
+        font-family: 'Roboto Slab', serif;
+        background-color: #EEEEEE;
+        overflow-y: scroll;
+        height: calc(60vh - 165px);
+    }
+
+    &-rating{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-content: center;
+        flex-wrap: wrap;
+        position: absolute;
+        bottom: 0;
+        height: 50px;
+        width: 100%;
+        background-color: #CF0A0A;
+
+        span{
+            font-family: 'Roboto Slab', serif;
+            font-size: xx-large;
+            font-weight: bold;
+            color: #EEEEEE;
+        }
+    }
+}

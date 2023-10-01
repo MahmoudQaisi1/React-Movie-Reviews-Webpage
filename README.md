@@ -1,70 +1,17 @@
-# Getting Started with Create React App
+# Movie-Reviews-Webpage
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**Project Objective:**
 
-## Available Scripts
+The primary objective of this project is to develop a web page that empowers users to search for movies by their titles and explore reviews related to those movies.
 
-In the project directory, you can run:
+**Project Workflow:**
 
-### `npm start`
+1. **Movie Search:** Users will have the ability to enter the title of a movie they are interested in within a designated input field.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+2. **API Interaction:** Upon entering the movie title and clicking the search button, the application will initiate an API request. This request is directed towards The Movie Database API, which processes the query and responds with a list of top matches that closely match the entered movie title.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+3. **Response Handling:** Once the API response is received, the application dynamically extracts and displays movie reviews. These reviews are showcased in an interactive carousel format.
 
-### `npm test`
+4. **Carousel Implementation:** To achieve this carousel display of reviews, the project employs the `react-slick` library. This library offers a set of tools and components to efficiently create and manage carousels within a React-based web application.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+In essence, this project revolves around the creation of a user-friendly web page that enables movie searches by title and offers a seamless experience for exploring movie reviews. It leverages The Movie Database API for data retrieval and implements the `react-slick` library to present movie reviews in a visually appealing carousel format.
